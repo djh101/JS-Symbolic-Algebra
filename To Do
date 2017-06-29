@@ -1,0 +1,12 @@
+simplify:
+1) Find and simplify functions and replace with constant (e.g. sin(x) -> -1, cos(x) -> -2)
+2) Distribute parenthesis: (a+b)(c+d) => (a+b)c+(a+b)d => ac+bc+ad+bd
+3) Group products into array and replace / with negated exponent: a*b+c*d => {(a,b),(c,d)}
+4) Simplify subfunctions in exponents: x^(2+5) => x^7
+5) [Rearrange] Combine products: 2*6 => 12; a*a => a^2
+6) Combine sums with like powers (attempt multiple combinations and take minimized result): {(a,x^2),(b,x^2,c)} => (a+b*c)*x^2
+7) Group compatible functions (e.g. trigonometric or logarithm) for further simplification
+8) Remove redundancies (+0, *0, *1, ^0, ^1; evaluate functions and check if result is an integer)
+9) Remove unnecessary parenthesis
+10) Check for function simplifications (e.g. ln + ln, sin*cos^-n)
+11) Replace eval() with GMP
